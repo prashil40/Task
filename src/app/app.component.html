@@ -1,0 +1,31 @@
+
+<div class="page">
+  <div class="container">
+    <div class="quoteArea" id="quoteDownload" style="padding: 20px;">
+  <h1 *ngIf = ' quote != "" ' >
+      {{ quote }}
+  </h1>
+  <h1 *ngIf = ' quote == "" && count != 0' >
+    Not Available
+  </h1>
+
+  <h3 class="author" style="margin-top:20px">
+    {{ author }}
+  </h3>
+  </div>
+
+  <div class="buttonArea">
+    <button (click)="onGenerate()">
+    Generate
+    </button>
+
+  <button (click)="onToggleLanguage()">
+    Toggle Language
+  </button>
+
+  <button (click)="onDownload()">
+    Download
+  </button>
+</div>
+</div>
+</div>
